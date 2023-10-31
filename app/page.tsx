@@ -4,6 +4,7 @@ import getListing, { IListingsParams } from "./actions/getListing";
 
 import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
+export const dynamic = 'force-dynamic'
 
 interface HomeProps {
   searchParams: IListingsParams;
