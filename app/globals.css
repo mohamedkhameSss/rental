@@ -15,13 +15,31 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html,
+body,
+:root {
+  height: 100%;
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+.rdrMonth {
+  width: 100% !important;
+}
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 16px !important;
 }
